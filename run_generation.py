@@ -283,20 +283,13 @@ def main():
 
             ## print(text)
             print("=" * 80 + "\n")
-            print(raw_text + text + "\n")
-            
+            print(raw_text + text + "\n")           
             counter += 1
-
             ## write text to file
-
             f = open(complete_path, "a", encoding="utf-8")
-
-            f.write( "$$$$$ " + details_string + "\n")
-           
+            f.write( "$$$$$ " + details_string + "\n")           
             f.write(raw_text + text + "\n")          
-
-            f.close()
-            
+            f.close()            
 
         if args.prompt:
             break
